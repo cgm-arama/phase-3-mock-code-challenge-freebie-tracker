@@ -18,4 +18,17 @@ puts "Creating freebies..."
 # ***************************************************************
 # Create freebies Here
 
+
 puts "Seeding done!"
+
+
+# db/seeds.rb
+
+# ... existing seed data ...
+
+# Add sample freebies
+dev = Dev.first
+company = Company.first
+Freebie.create(item_name: "Sample Item 1", value: 10, dev: dev, company: company)
+Freebie.create(item_name: "Sample Item 2", value: 20, dev: dev, company: company)
+
